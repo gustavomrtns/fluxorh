@@ -86,11 +86,11 @@ mobileRefinement.textContent=`
   .trust-row{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:12px!important}
   .trust-row span{padding:15px 13px!important;min-height:68px;display:flex;flex-direction:column;justify-content:center}
 
-  .moment-grid,.services-grid{gap:16px!important;padding-bottom:16px!important}
-  .moment-card{flex-basis:80vw!important;padding:26px!important;border-radius:26px}
+  .moment-grid,.services-grid{gap:16px!important;padding-bottom:16px!important;align-items:flex-start!important}
+  .moment-card{flex:0 0 82vw!important;min-height:0!important;height:auto!important;padding:26px!important;border-radius:26px;align-self:flex-start!important}
   .moment-card h3{margin-top:18px!important}
 
-  .service-card{flex-basis:88vw!important;padding:28px!important;border-radius:28px}
+  .service-card{flex:0 0 88vw!important;min-height:0!important;height:auto!important;padding:28px!important;border-radius:28px;align-self:flex-start!important}
   .service-card>p{margin-bottom:0}
   .service-fit,.service-deliver{display:none}
   .service-card.details-open .service-fit,.service-card.details-open .service-deliver{display:block}
