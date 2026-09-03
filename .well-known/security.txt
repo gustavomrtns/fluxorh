@@ -1,0 +1,5 @@
+Contact: mailto:fluxorh@outlook.com
+Canonical: https://somosfluxorh.com.br/.well-known/security.txt
+Policy: https://github.com/gustavomrtns/fluxorh/security/policy
+Preferred-Languages: pt-BR, en
+Expires: 2027-09-03T23:59:59Z
