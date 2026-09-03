@@ -3,6 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-BTikMhA1JU7qa+AdjmunF/W0Uf4xtr53nzxEaLvlFGk='; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>Fluxo RH — Consultoria de carreira para profissionais</title>
   <meta name="description" content="Consultoria de carreira para profissionais em recolocação, transição ou fortalecimento de posicionamento. Currículo, LinkedIn, mentoria e portfólio com atendimento remoto em todo o Brasil.">
   <meta name="theme-color" content="#fffaf5">
@@ -17,12 +19,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
-  <style>
-    @media (max-width: 640px){
-      .trust-row{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;}
-      .trust-row span{padding:14px 12px;min-height:64px;display:flex;flex-direction:column;justify-content:center;}
-    }
-  </style>
+  <link rel="stylesheet" href="css/hardening.css">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Fluxo RH","url":"https://somosfluxorh.com.br/","description":"Consultoria de carreira para profissionais em recolocação, transição ou fortalecimento de posicionamento profissional.","areaServed":"BR","email":"fluxorh@outlook.com","telephone":"+55-92-98470-4754","serviceType":["Análise e elaboração curricular","Avaliação e otimização de LinkedIn","Mentoria de carreira","Elaboração de portfólio profissional"]}</script>
 </head>
 <body>
@@ -240,7 +237,7 @@
           </label>
           <label>Conte um pouco sobre seu momento<textarea name="mensagem" rows="5" placeholder="Ex.: estou buscando recolocação e sinto que meu currículo não comunica bem minhas experiências..."></textarea></label>
           <button class="button button-primary" type="submit">Continuar no WhatsApp</button>
-          <small>Ao clicar, nenhuma informação é enviada automaticamente: a mensagem será aberta no seu WhatsApp para sua revisão antes do envio.</small>
+          <small class="form-privacy">As informações preenchidas não são armazenadas neste site. Elas servem apenas para montar a mensagem que será aberta no seu WhatsApp para revisão. Consulte a <a href="privacidade.html">Política de Privacidade</a>.</small>
         </form>
       </div>
     </section>
@@ -252,7 +249,7 @@
         <a class="brand footer-brand" href="#inicio"><svg class="brand-symbol" viewBox="0 0 64 54" aria-hidden="true"><path d="M32 2 58 28v24L32 26 6 52V28L32 2Z" fill="currentColor"/></svg><span class="brand-name">fluxo <b>rh</b></span></a>
         <p>Consultoria de carreira para profissionais em movimento.</p>
       </div>
-      <div class="footer-links"><a href="#servicos" data-nav-link>Serviços</a><a href="#processo" data-nav-link>Como funciona</a><a href="#sobre" data-nav-link>Quem somos</a><a href="#contato">Contato</a></div>
+      <div class="footer-links"><a href="#servicos" data-nav-link>Serviços</a><a href="#processo" data-nav-link>Como funciona</a><a href="#sobre" data-nav-link>Quem somos</a><a href="#contato">Contato</a><a class="privacy-link" href="privacidade.html">Privacidade</a></div>
       <div class="footer-note">© <span data-year></span> Fluxo RH. Todos os direitos reservados.</div>
     </div>
   </footer>
