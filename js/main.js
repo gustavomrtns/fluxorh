@@ -68,4 +68,15 @@ const navObserver='IntersectionObserver'in window?new IntersectionObserver(entri
 },{rootMargin:'-28% 0px -58% 0px',threshold:[0,.2,.5,1]}):null;
 sectionIds.forEach(id=>{const section=document.querySelector(id);if(section&&navObserver)navObserver.observe(section)});
 
+const eyebrow=document.querySelector('.hero .eyebrow');
+const trustItems=[...document.querySelectorAll('.hero .trust-row > span')];
+const desktopEyebrow='Consultoria de carreira · atendimento em todo o Brasil';
+function applyMobileHero(){
+  const mobile=window.matchMedia('(max-width: 640px)').matches;
+  if(eyebrow)eyebrow.textContent=mobile?'Consultoria de carreira':desktopEyebrow;
+  if(trustItems[2])trustItems[2].style.display=mobile?'none':'';
+}
+applyMobileHero();
+window.addEventListener('resize',applyMobileHero,{passive:true});
+
 document.querySelectorAll('[data-year]').forEach(el=>{el.textContent=new Date().getFullYear()});
