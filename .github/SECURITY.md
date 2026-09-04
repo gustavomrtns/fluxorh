@@ -4,7 +4,7 @@ A Fluxo RH valoriza a divulgação responsável de vulnerabilidades relacionadas
 
 ## Como reportar
 
-Envie um relato para **fluxorh@outlook.com** com o assunto **[SEGURANÇA] Relato de vulnerabilidade**.
+Envie um relato para **consultoriafluxorh@gmail.com** com o assunto **[SEGURANÇA] Relato de vulnerabilidade**.
 
 Inclua, sempre que possível:
 
